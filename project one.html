@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Front-End Program</title>
+    <style>
+        /* Styling for the button */
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Front-End Program</h1>
+    <p>Click the button to change the text:</p>
+    
+    <!-- Button element -->
+    <button id="changeTextButton">Click Me</button>
+
+    <p id="displayText">Hello, World!</p>
+
+    <script>
+        // JavaScript code to handle the button click event
+        const changeTextButton = document.getElementById('changeTextButton');
+        const displayText = document.getElementById('displayText');
+        
+        changeTextButton.addEventListener('click', () => {
+            displayText.textContent = 'Text changed by the button!';
+        });
+    </script>
+</body>
+</html>
